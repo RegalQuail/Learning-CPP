@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main(){
@@ -14,23 +15,39 @@ int main(){
     int myAge = 17;
     cout << "I am " << myAge << " years old. \n";
 
-    int x = 5;
-    int y = 6;
-    int sum = x + y;
-    cout << "Sum = " << sum << "\n";
-
     const float pi = 3.1415; // cannot be overridden, change
     const int minutesPerHour = 60;
 
-    int a, b;
-    int calcSum;
+    int x, y;
+    int sum;
 
     cout << "Type a number: ";
-    cin >> a;
+    cin >> x;
     cout << "Type an other number: ";
-    cin >> b;
-    sum = a + b;
-    cout << "The sum is: " << calcSum;
+    cin >> y;
+    sum = x + y;
+    cout << "The sum is: " << sum << "\n";
+
+
+    // access the characters in a string:
+    string myString = "Hello";
+    cout << myString[0] << "\n"; // outputs H
+    cout << myString[2] << "\n"; // outputs l
+
+    // change string characters:
+    myString[0] = 'J';
+    cout << myString << "\n"; // outputs Jello
+
+    string dumbPerson;
+    cout << "Who is dumb: ";
+    cin >> dumbPerson;
+    if (dumbPerson == "Thomas"){
+        dumbPerson = "Jonah";
+        cout << dumbPerson << " is dumb !";
+        return 0;
+    } else {
+        cout << dumbPerson << " is dumb !";
+    }
 
     return 0;
 }
