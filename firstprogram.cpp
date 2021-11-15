@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-int main(){
+int main() {
     cout << "Hello World ! \n";
     cout << "I am learning C++ ! \n";
 
@@ -41,7 +41,7 @@ int main(){
     string dumbPerson;
     cout << "Who is dumb: ";
     cin >> dumbPerson;
-    if (dumbPerson == "Thomas"){
+    if (dumbPerson == "Thomas") {
         dumbPerson = "Jonah";
         cout << dumbPerson << " is dumb !";
         return 0;
