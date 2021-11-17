@@ -31,13 +31,12 @@ int main() {
     int n;
     cin >> n;
     //your code goes here:
-    while(n >= 1) {
+    while (n >= 1) {
         cout << n << endl;
         if (n % 5 == 0) {
             cout << "Beep" << endl;
         }
         n--;
     }
-
     return 0;
 }
