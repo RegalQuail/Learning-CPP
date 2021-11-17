@@ -20,11 +20,15 @@ using namespace std;
 
 int main() {
     // The code goes here:
-    int a = 50;
-    int x;
+    int maxPassengers = 50;
+    int numberOfPassengers;
 
     cout << "Enter the number of passengers: ";
-    cin >> x;
+    cin >> numberOfPassengers;
+
+    int remaindingSeats = maxPassengers - (numberOfPassengers % maxPassengers);
+
+    cout << remaindingSeats;
 
     return 0;
 }
