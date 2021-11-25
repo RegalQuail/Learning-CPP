@@ -43,11 +43,18 @@ int main() {
     cin >> dumbPerson;
     if (dumbPerson == "Thomas") {
         dumbPerson = "Jonah";
-        cout << dumbPerson << " is dumb !";
-        return 0;
+        cout << dumbPerson << " is dumb !" << endl;
     } else {
-        cout << dumbPerson << " is dumb !";
+        cout << dumbPerson << " is dumb !" << endl;
     }
+
+    // user input strings
+    // cin reads spaces as line breaks,
+    // use the getline() function with corresponding parameters to get the entire string:
+    string fullName;
+    cout << "What is your name: " <<  endl;
+    getline (cin, fullName); // Using getline() to read the whole string
+    cout << "Your full name is: " << fullName << endl;
 
     return 0;
 }
