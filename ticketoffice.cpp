@@ -24,14 +24,24 @@ using namespace std;
 int main() {
 
     int ages[5];
-    int ticketPrice = 10;
-    int totalPrice;
 
     for (int i = 0; i < 5; ++i) {
         cin >> ages[i];
     }
     //your code goes here
+    int totalPrice = 50;
+    double finalPrice;
+    double minimum = ages[0];
 
+    for (int i = 0; i < 5; i++) {
+        if (minimum > ages[i]) {
+            minimum = ages[i];
+        }
+    }
+
+    finalPrice = totalPrice - (minimum * 0.5);
+
+    cout << finalPrice << endl;
 
     return 0;
 }
